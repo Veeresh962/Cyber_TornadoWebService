@@ -1,6 +1,6 @@
 # Cyber_TornadoWebService
 
-***Overview of the project****
+# **Overview of the project**
 
 This tornadowebservice challange is a web application task where we need to find and exploit the vulnerabilities, get an unauthorized access and retrieve the flag.
 
@@ -10,7 +10,7 @@ Log in with the injected credentials.
 
 Access sensitive data like flags and create a new user from a protected endpoint.
 
-**The Tools to solve this challange:**
+# **The Tools to solve this challange:**
 
 Kali Linux
 
