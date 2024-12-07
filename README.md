@@ -66,8 +66,6 @@ Host this payload as index.html on a local server or on NGROK Public server if y
 
 **Hosting the exploit and exploiting the vulnerability:**
 
-Firstly make sure to change the ipaddress and your port numbers according to your machine.
-
 Get the status of the Ip Machine to know about it
 
 curl -X GET "http://94.237.63.109:45919/stats"
@@ -84,11 +82,11 @@ Inject the new User to the server for getting access and store cookie data
 
 curl -X POST "http://94.237.59.207:47563/login" \            -H "Content-Type: application/json" \ -d '{"username": "kittykat", "password": "kittykat"}' \ -c cookie.txt 
 
-Run the following command to get cookie data.
+we have run the following command to get the cookie data.
 
 curl -X GET "http://94.237.59.207:47563/stats" -b cookie.txt
 
-Submit the retrived flag.
+Finally we have Submitted the retrived flag.
 
 **Pictures:**
 
